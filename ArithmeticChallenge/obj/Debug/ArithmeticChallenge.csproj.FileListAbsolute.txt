@@ -1,0 +1,37 @@
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.Instructor.resources
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.Properties.Resources.resources
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csproj.GenerateResource.Cache
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csproj.CoreCompileInputs.cache
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.exe.config
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.exe
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.pdb
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\Newtonsoft.Json.dll
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\Newtonsoft.Json.xml
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.exe
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.pdb
+C:\Users\0111005906\Desktop\C# Assessments\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csprojResolveAssemblyReference.cache
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.exe.config
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.exe
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.pdb
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\Newtonsoft.Json.dll
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\bin\Debug\Newtonsoft.Json.xml
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csprojResolveAssemblyReference.cache
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.Instructor.resources
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.Properties.Resources.resources
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csproj.GenerateResource.Cache
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csproj.CoreCompileInputs.cache
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.exe
+D:\Project Repo\ArithmeticChallenge\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.pdb
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.exe.config
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.exe
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\bin\Debug\ArithmeticChallenge.pdb
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.Instructor.resources
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.Properties.Resources.resources
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csproj.GenerateResource.cache
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csproj.CoreCompileInputs.cache
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csproj.CopyComplete
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.exe
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.pdb
+C:\Users\Galarist\Desktop\ArithmeticChallenge-master\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.csprojAssemblyReference.cache
