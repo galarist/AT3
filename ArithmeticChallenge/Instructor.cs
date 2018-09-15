@@ -11,6 +11,7 @@ using ArithmeticChallenge.NodeFunctions;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -293,7 +294,7 @@ namespace ArithmeticChallenge
             this.Close();
         }
 
-        #region List sorting buttons
+        #region Sorting Fucntion
 
         int count = 0;
 
@@ -312,24 +313,24 @@ namespace ArithmeticChallenge
                 tempList = equations.OrderByDescending(x => x.FirstNumber).ToList();
                 dataGridView1.DataSource = tempList;
                 count = 0;
-            }           
+            }
         }
 
         private void btn_sortTwo_Click(object sender, EventArgs e)
         {
             List<Equations> tempList = new List<Equations>();
 
-            if (count == 0)
-            {
-                tempList = equations.OrderBy(x => x.Symbol).ToList();
-                dataGridView1.DataSource = tempList;
-                count++;
-            }
-            else if (count == 1)
-            {
-                tempList = equations.OrderByDescending(x => x.Symbol).ToList();
-                dataGridView1.DataSource = tempList;
-                count = 0;
+             if (count == 0)
+             {
+                 tempList = equations.OrderBy(x => x.Symbol).ToList();
+                 dataGridView1.DataSource = tempList;
+                 count++;
+             }
+             else if (count == 1)
+             {
+                 tempList = equations.OrderByDescending(x => x.Symbol).ToList();
+                 dataGridView1.DataSource = tempList;
+                 count = 0;
             }
         }
 
@@ -349,25 +350,7 @@ namespace ArithmeticChallenge
                 dataGridView1.DataSource = tempList;
                 count = 0;
             }
-        }
-
-        private void btn_sortFour_Click(object sender, EventArgs e)
-        {
-            List<Equations> tempList = new List<Equations>();
-
-            if (count == 0)
-            {
-                tempList = equations.OrderBy(x => x.Result).ToList();
-                dataGridView1.DataSource = tempList;
-                count++;
-            }
-            else if (count == 1)
-            {
-                tempList = equations.OrderByDescending(x => x.Result).ToList();
-                dataGridView1.DataSource = tempList;
-                count = 0;
-            }
-        }
+        }    
 
         #endregion
 
