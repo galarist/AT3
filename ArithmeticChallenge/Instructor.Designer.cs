@@ -392,7 +392,7 @@
             this.SNumber,
             this.Answer});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridView1.Location = new System.Drawing.Point(342, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(502, 60);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(30);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -409,7 +409,7 @@
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Size = new System.Drawing.Size(608, 242);
+            this.dataGridView1.Size = new System.Drawing.Size(447, 242);
             this.dataGridView1.TabIndex = 30;
             // 
             // CloseInstructor
@@ -477,24 +477,28 @@
             this.Fnumber.DefaultCellStyle = dataGridViewCellStyle2;
             this.Fnumber.HeaderText = "First Number";
             this.Fnumber.Name = "Fnumber";
+            this.Fnumber.Visible = false;
             this.Fnumber.Width = 160;
             // 
             // Operator
             // 
             this.Operator.HeaderText = "Operator";
             this.Operator.Name = "Operator";
+            this.Operator.Visible = false;
             this.Operator.Width = 125;
             // 
             // SNumber
             // 
             this.SNumber.HeaderText = "Secord Number";
             this.SNumber.Name = "SNumber";
+            this.SNumber.Visible = false;
             this.SNumber.Width = 160;
             // 
             // Answer
             // 
             this.Answer.HeaderText = "Answer";
             this.Answer.Name = "Answer";
+            this.Answer.Visible = false;
             this.Answer.Width = 145;
             // 
             // Instructor
@@ -534,6 +538,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Instructor";
             this.Text = "Instructor";
+            this.Load += new System.EventHandler(this.Instructor_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);

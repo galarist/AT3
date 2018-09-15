@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -158,9 +159,9 @@ namespace ArithmeticChallenge
 
                 Invoke((Action)delegate
                 {
-                    rtb_binaryTree.Clear();
+                    rtbAsked.Clear();
                     //the default print order for the binary tree is in-order
-                    rtb_binaryTree.Text = BinaryTree.PrintInOrder(tree);
+                    rtbAsked.Text = BinaryTree.PrintInOrder(tree);
                     SendBtn.Enabled = true;
                 });
 
@@ -171,7 +172,7 @@ namespace ArithmeticChallenge
                     {
                         if (equation.IsCorrect == false)
                         {
-                            rtb_linkList.Text = InstructorController.PrintLinkList(equationNodeList);
+                            rtbWrong.Text = InstructorController.PrintLinkList(equationNodeList);
                         }                     
                     });
                 }
@@ -199,8 +200,8 @@ namespace ArithmeticChallenge
             // Set button state to false
             SendBtn.Enabled = false;
             // Create a new equation object from the given data
-            Equations equation = new Equations(Convert.ToInt32(tb_firstNumber.Text),
-                Convert.ToInt32(tb_secondNumber.Text), comboBoxOperators.Text, Convert.ToInt32(tb_answer.Text), false);
+            Equations equation = new Equations(Convert.ToInt32(textBoxFnumber.Text),
+                Convert.ToInt32(textBoxSnumber.Text), comboBoxOperators.Text, Convert.ToInt32(textBoxAnumber.Text), false);
 
             try
             {
@@ -224,13 +225,13 @@ namespace ArithmeticChallenge
         //loads the data grid view and allocates the data source values to the correct columns
         public void LoadQuestionsDataGridView()
         {
-            dgv_questionsAsked.AutoGenerateColumns = false;
-            dgv_questionsAsked.DataSource = equations;
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = equations;
 
             DataGridViewTextBoxColumn columnFirst = new DataGridViewTextBoxColumn();
             columnFirst.DataPropertyName = "FirstNumber";
             columnFirst.Name = "First";
-            dgv_questionsAsked.Columns.Add(columnFirst);
+            dataGridView1.Columns.Add(columnFirst);
 
             DataGridViewTextBoxColumn columnOperator = new DataGridViewTextBoxColumn();
             columnOperator.DataPropertyName = "Symbol";
@@ -240,44 +241,44 @@ namespace ArithmeticChallenge
             DataGridViewTextBoxColumn columnSecond = new DataGridViewTextBoxColumn();
             columnSecond.DataPropertyName = "SecondNumber";
             columnSecond.Name = "Second";
-            dgv_questionsAsked.Columns.Add(columnSecond);
+            dataGridView1.Columns.Add(columnSecond);
 
             DataGridViewTextBoxColumn columnResult = new DataGridViewTextBoxColumn();
             columnResult.DataPropertyName = "Result";
             columnResult.Name = "Result";
-            dgv_questionsAsked.Columns.Add(columnResult);
+            dataGridView1.Columns.Add(columnResult);
         }
 
         //refreshes the data grid when a new object is added to the data source
         private void RefreshResultDatagrid()
         {
-            dgv_questionsAsked.DataSource = null;
+            dataGridView1.DataSource = null;
 
-            dgv_questionsAsked.DataSource = equations;
+            dataGridView1.DataSource = equations;
         }
 
         #region Update result text box when calculation is changed
         private void comboBoxOperators_SelectedIndexChanged(object sender, EventArgs e)
         {
-            tb_answer.Text = InstructorController.PerformCalculation(
-                tb_firstNumber.Text,
-                tb_secondNumber.Text,
+            textBoxAnumber.Text = InstructorController.PerformCalculation(
+                textBoxFnumber.Text,
+                textBoxSnumber.Text,
                 comboBoxOperators.Text).ToString();
         }
 
         private void tb_firstNumber_TextChanged(object sender, EventArgs e)
         {
-            tb_answer.Text = InstructorController.PerformCalculation(
-                tb_firstNumber.Text,
-                tb_secondNumber.Text,
+            textBoxAnumber.Text = InstructorController.PerformCalculation(
+                textBoxFnumber.Text,
+                textBoxSnumber.Text,
                 comboBoxOperators.Text).ToString();
         }
 
         private void tb_secondNumber_TextChanged(object sender, EventArgs e)
         {
-            tb_answer.Text = InstructorController.PerformCalculation(
-                tb_firstNumber.Text,
-                tb_secondNumber.Text,
+            textBoxAnumber.Text = InstructorController.PerformCalculation(
+                textBoxFnumber.Text,
+                textBoxSnumber.Text,
                 comboBoxOperators.Text).ToString();
         }
         #endregion
@@ -303,13 +304,13 @@ namespace ArithmeticChallenge
             if (count == 0)
             {
                 tempList = equations.OrderBy(x => x.FirstNumber).ToList();
-                dgv_questionsAsked.DataSource = tempList;
+                dataGridView1.DataSource = tempList;
                 count++;
             }
             else if (count == 1)
             {
                 tempList = equations.OrderByDescending(x => x.FirstNumber).ToList();
-                dgv_questionsAsked.DataSource = tempList;
+                dataGridView1.DataSource = tempList;
                 count = 0;
             }           
         }
@@ -321,13 +322,13 @@ namespace ArithmeticChallenge
             if (count == 0)
             {
                 tempList = equations.OrderBy(x => x.Symbol).ToList();
-                dgv_questionsAsked.DataSource = tempList;
+                dataGridView1.DataSource = tempList;
                 count++;
             }
             else if (count == 1)
             {
                 tempList = equations.OrderByDescending(x => x.Symbol).ToList();
-                dgv_questionsAsked.DataSource = tempList;
+                dataGridView1.DataSource = tempList;
                 count = 0;
             }
         }
@@ -339,13 +340,13 @@ namespace ArithmeticChallenge
             if (count == 0)
             {
                 tempList = equations.OrderBy(x => x.SecondNumber).ToList();
-                dgv_questionsAsked.DataSource = tempList;
+                dataGridView1.DataSource = tempList;
                 count++;
             }
             else if (count == 1)
             {
                 tempList = equations.OrderByDescending(x => x.SecondNumber).ToList();
-                dgv_questionsAsked.DataSource = tempList;
+                dataGridView1.DataSource = tempList;
                 count = 0;
             }
         }
@@ -357,13 +358,13 @@ namespace ArithmeticChallenge
             if (count == 0)
             {
                 tempList = equations.OrderBy(x => x.Result).ToList();
-                dgv_questionsAsked.DataSource = tempList;
+                dataGridView1.DataSource = tempList;
                 count++;
             }
             else if (count == 1)
             {
                 tempList = equations.OrderByDescending(x => x.Result).ToList();
-                dgv_questionsAsked.DataSource = tempList;
+                dataGridView1.DataSource = tempList;
                 count = 0;
             }
         }
@@ -373,19 +374,19 @@ namespace ArithmeticChallenge
         private void btn_printPreOrder_Click(object sender, EventArgs e)
         {
             //lbl_sortOrder.Text = "Binary Tree - Sorted by Pre-Order";
-            rtb_binaryTree.Text = BinaryTree.PrintPreOrder(tree);
+            rtbAsked.Text = BinaryTree.PrintPreOrder(tree);
         }
 
         private void btn_printInOrder_Click(object sender, EventArgs e)
         {
             //lbl_sortOrder.Text = "Binary Tree - Sorted by In-Order";
-            rtb_binaryTree.Text = BinaryTree.PrintInOrder(tree);
+            rtbAsked.Text = BinaryTree.PrintInOrder(tree);
         }
 
         private void btn_printPostOrder_Click(object sender, EventArgs e)
         {
             //lbl_sortOrder.Text = "Binary Tree - Sorted by Post-Order";
-            rtb_binaryTree.Text = BinaryTree.PrintPostOrder(tree);
+            rtbAsked.Text = BinaryTree.PrintPostOrder(tree);
         }
 
         private void btn_savePreOrder_Click(object sender, EventArgs e)
@@ -424,6 +425,27 @@ namespace ArithmeticChallenge
         private void btn_numbersOnly(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void Instructor_Load(object sender, EventArgs e)
+        {
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.RowTemplate.Resizable = DataGridViewTriState.True;
+            dataGridView1.RowTemplate.Height = 30;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 13F);
+            dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 12F);
+            dataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightSkyBlue;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dataGridView1.BackgroundColor = Color.FromArgb(36, 73, 110);
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromName("Highlight");
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromName("ButtonHighlight");
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromName("AppWorkspace");
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dataGridView1.BackColor = Color.FromArgb(/*244, 160, 144*/242, 237, 220);
         }
     }
 }
