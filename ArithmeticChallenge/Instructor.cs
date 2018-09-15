@@ -230,7 +230,7 @@ namespace ArithmeticChallenge
 
             DataGridViewTextBoxColumn columnFirst = new DataGridViewTextBoxColumn();
             columnFirst.DataPropertyName = "FirstNumber";
-            columnFirst.Name = "First";
+            columnFirst.Name = "First Number";
             dataGridView1.Columns.Add(columnFirst);
 
             DataGridViewTextBoxColumn columnOperator = new DataGridViewTextBoxColumn();
@@ -240,12 +240,12 @@ namespace ArithmeticChallenge
 
             DataGridViewTextBoxColumn columnSecond = new DataGridViewTextBoxColumn();
             columnSecond.DataPropertyName = "SecondNumber";
-            columnSecond.Name = "Second";
+            columnSecond.Name = "Second Number";
             dataGridView1.Columns.Add(columnSecond);
 
             DataGridViewTextBoxColumn columnResult = new DataGridViewTextBoxColumn();
             columnResult.DataPropertyName = "Result";
-            columnResult.Name = "Result";
+            columnResult.Name = "Answer";
             dataGridView1.Columns.Add(columnResult);
         }
 
@@ -446,6 +446,14 @@ namespace ArithmeticChallenge
             dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromName("AppWorkspace");
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
             dataGridView1.BackColor = Color.FromArgb(/*244, 160, 144*/242, 237, 220);
+            DataGridViewColumn column = dataGridView1.Columns[0];
+            DataGridViewColumn column1 = dataGridView1.Columns[1];
+            DataGridViewColumn column2 = dataGridView1.Columns[2];
+            DataGridViewColumn column3 = dataGridView1.Columns[3];
+            column.Width = 160;
+            column1.Width = 120;
+            column2.Width = 140;
+            column3.Width = 143;
         }
     }
 }
