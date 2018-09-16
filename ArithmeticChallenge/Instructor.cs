@@ -366,36 +366,63 @@ namespace ArithmeticChallenge
 
         private void SavePreOrder_Click(object sender, EventArgs e)
         {
-            string preOrderDir = @"preOrder.txt";
+            using (FileStream stream = new FileStream(@"PreOrder.txt", FileMode.Create))
+            using (TextWriter writer = new StreamWriter(stream))
+            {
+                writer.WriteLine("");
+            }
+
+            string preOrderDir = @"PreOrder.txt";
 
             using (StreamWriter writer = new StreamWriter(preOrderDir, true))
             {
-                writer.WriteLine(BinaryTree.PrintPreOrder(tree));
+                writer.WriteLine("Pre-Order: " + BinaryTree.PrintPreOrder(tree));
                 writer.Close();
             }
+
+            var lines = File.ReadAllLines(@"PreOrder.txt").Where(arg => !string.IsNullOrWhiteSpace(arg));
+            File.WriteAllLines(@"PreOrder.txt", lines);
         }
 
         private void SaveInOrder_Click(object sender, EventArgs e)
         {
-            string preOrderDir = @"inOrder.txt";
+            using (FileStream stream = new FileStream(@"InOrder.txt", FileMode.Create))
+            using (TextWriter writer = new StreamWriter(stream))
+            {
+                writer.WriteLine("");
+            }
+
+            string preOrderDir = @"InOrder.txt";
 
             using (StreamWriter writer = new StreamWriter(preOrderDir, true))
             {
-                writer.WriteLine(BinaryTree.PrintInOrder(tree));
+                writer.WriteLine("In-Order: " + BinaryTree.PrintInOrder(tree));
                 writer.Close();
             }
+
+            var lines = File.ReadAllLines(@"InOrder.txt").Where(arg => !string.IsNullOrWhiteSpace(arg));
+            File.WriteAllLines(@"InOrder.txt", lines);
         }
 
         private void SavePostOrder_Click(object sender, EventArgs e)
         {
-            string preOrderDir = @"postOrder.txt";
+            using (FileStream stream = new FileStream(@"PostOrder.txt", FileMode.Create))
+            using (TextWriter writer = new StreamWriter(stream))
+            {
+                writer.WriteLine("");
+            }
+
+            string preOrderDir = @"PostOrder.txt";
 
             using (StreamWriter writer = new StreamWriter(preOrderDir, true))
             {
-                writer.WriteLine(BinaryTree.PrintPostOrder(tree));
+                writer.WriteLine("Post-Order: " + BinaryTree.PrintPostOrder(tree));
                 writer.Close();
             }
-                
+
+            var lines = File.ReadAllLines(@"PostOrder.txt").Where(arg => !string.IsNullOrWhiteSpace(arg));
+            File.WriteAllLines(@"PostOrder.txt", lines);
+
         }
 
         private void btn_numbersOnly(object sender, KeyPressEventArgs e)
