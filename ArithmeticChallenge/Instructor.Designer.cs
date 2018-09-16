@@ -288,7 +288,7 @@
             this.comboBoxOperators.Name = "comboBoxOperators";
             this.comboBoxOperators.Size = new System.Drawing.Size(163, 32);
             this.comboBoxOperators.TabIndex = 41;
-            this.comboBoxOperators.TextChanged += new System.EventHandler(this.comboBoxOperators_SelectedIndexChanged);
+            this.comboBoxOperators.TextChanged += new System.EventHandler(this.ComboBoxOperators_SelectedIndexChanged);
             // 
             // textBoxSnumber
             // 
@@ -297,7 +297,7 @@
             this.textBoxSnumber.Name = "textBoxSnumber";
             this.textBoxSnumber.Size = new System.Drawing.Size(163, 29);
             this.textBoxSnumber.TabIndex = 39;
-            this.textBoxSnumber.TextChanged += new System.EventHandler(this.tb_secondNumber_TextChanged);
+            this.textBoxSnumber.TextChanged += new System.EventHandler(this.TextBoxSnumber_TextChanged);
             // 
             // label7
             // 
@@ -326,7 +326,7 @@
             this.textBoxFnumber.Name = "textBoxFnumber";
             this.textBoxFnumber.Size = new System.Drawing.Size(163, 29);
             this.textBoxFnumber.TabIndex = 40;
-            this.textBoxFnumber.TextChanged += new System.EventHandler(this.tb_firstNumber_TextChanged);
+            this.textBoxFnumber.TextChanged += new System.EventHandler(this.TextBoxFnumber_TextChanged);
             // 
             // label6
             // 
@@ -442,7 +442,7 @@
             this.SendBtn.TabIndex = 28;
             this.SendBtn.Text = "Ask";
             this.SendBtn.UseVisualStyleBackColor = false;
-            this.SendBtn.Click += new System.EventHandler(this.btn_send_Click);
+            this.SendBtn.Click += new System.EventHandler(this.Send_Click);
             // 
             // label1
             // 

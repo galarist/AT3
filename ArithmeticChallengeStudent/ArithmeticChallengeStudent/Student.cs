@@ -24,7 +24,7 @@ namespace ArithmeticChallengeStudent
         private byte[] buffer;
 
         //open on port 3333
-        private int PORT = 3333;
+        private int PORT = 8888;
 
         //IP address only works for local computer
         private string LocalIP = "127.0.0.1";
@@ -164,7 +164,7 @@ namespace ArithmeticChallengeStudent
             }
         }
 
-        private void btn_submit_Click(object sender, EventArgs e)
+        private void Submit_Click(object sender, EventArgs e)
         {
             if (tb_answer.Text == equation.Result.ToString())
             {
@@ -195,7 +195,7 @@ namespace ArithmeticChallengeStudent
             clientSocket.BeginSend(sendData, 0, sendData.Length, SocketFlags.None, SendCallback, null);
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
+        private void Exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

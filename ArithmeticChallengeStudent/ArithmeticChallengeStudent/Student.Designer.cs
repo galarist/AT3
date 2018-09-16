@@ -83,7 +83,7 @@
             this.btn_exit.TabIndex = 18;
             this.btn_exit.Text = "Close";
             this.btn_exit.UseVisualStyleBackColor = false;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // btn_submit
             // 
@@ -97,7 +97,7 @@
             this.btn_submit.TabIndex = 19;
             this.btn_submit.Text = "Submit";
             this.btn_submit.UseVisualStyleBackColor = false;
-            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
+            this.btn_submit.Click += new System.EventHandler(this.Submit_Click);
             // 
             // tb_answer
             // 

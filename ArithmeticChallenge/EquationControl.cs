@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace ArithmeticChallenge.Controllers
 {
@@ -14,22 +15,28 @@ namespace ArithmeticChallenge.Controllers
             int firstNum = 0;
             int secondNum = 0;
 
-            if (string.IsNullOrWhiteSpace(first))
+            try
             {
-                firstNum = 0;
-            }
-            else
-            {
-                firstNum = Convert.ToInt32(first);                
-            }
+                if (string.IsNullOrWhiteSpace(first))
+                {
+                    firstNum = 0;
+                }
+                else
+                {
+                    firstNum = Convert.ToInt32(first);
+                }
 
-            if (string.IsNullOrWhiteSpace(second))
-            {
-                secondNum = 0;
+                if (string.IsNullOrWhiteSpace(second))
+                {
+                    secondNum = 0;
+                }
+                else
+                {
+                    secondNum = Convert.ToInt32(second);
+                }
             }
-            else
+            catch (Exception)
             {
-                secondNum = Convert.ToInt32(second);
             }
 
             int result = 0;

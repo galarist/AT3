@@ -188,7 +188,7 @@ namespace ArithmeticChallenge
             }
         }
 
-        private void btn_send_Click(object sender, EventArgs e)
+        private void Send_Click(object sender, EventArgs e)
         {
             // Set button state to false
             SendBtn.Enabled = false;
@@ -251,7 +251,7 @@ namespace ArithmeticChallenge
         }
 
         #region Update result text box when calculation is changed
-        private void comboBoxOperators_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxOperators_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBoxAnumber.Text = InstructorController.PerformCalculation(
                 textBoxFnumber.Text,
@@ -259,7 +259,7 @@ namespace ArithmeticChallenge
                 comboBoxOperators.Text).ToString();
         }
 
-        private void tb_firstNumber_TextChanged(object sender, EventArgs e)
+        private void TextBoxFnumber_TextChanged(object sender, EventArgs e)
         {
             textBoxAnumber.Text = InstructorController.PerformCalculation(
                 textBoxFnumber.Text,
@@ -267,7 +267,7 @@ namespace ArithmeticChallenge
                 comboBoxOperators.Text).ToString();
         }
 
-        private void tb_secondNumber_TextChanged(object sender, EventArgs e)
+        private void TextBoxSnumber_TextChanged(object sender, EventArgs e)
         {
             textBoxAnumber.Text = InstructorController.PerformCalculation(
                 textBoxFnumber.Text,
@@ -427,7 +427,7 @@ namespace ArithmeticChallenge
 
         private void btn_numbersOnly(object sender, KeyPressEventArgs e)
         {
-           // e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+          // e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
         private void Instructor_Load(object sender, EventArgs e)
