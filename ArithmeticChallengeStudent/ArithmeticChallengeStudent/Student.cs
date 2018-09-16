@@ -53,6 +53,15 @@ namespace ArithmeticChallengeStudent
             {
                 ShowErrorDialog(ex.Message);
             }
+
+            if (tb_question != null)
+            {
+                this.Focus();
+                tb_answer.Select();
+            }
+            else
+            {
+            }
         }
 
         private void ReceiveCallback(IAsyncResult AR)

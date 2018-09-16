@@ -304,13 +304,13 @@ namespace ArithmeticChallenge
 
             if (count == 0)
             {
-                tempList = equations.OrderBy(x => x.FirstNumber).ToList();
+                tempList = equations.OrderBy(x => x.Symbol).ToList();
                 dataGridView1.DataSource = tempList;
                 count++;
             }
             else if (count == 1)
             {
-                tempList = equations.OrderByDescending(x => x.FirstNumber).ToList();
+                tempList = equations.OrderByDescending(x => x.Symbol).ToList();
                 dataGridView1.DataSource = tempList;
                 count = 0;
             }
@@ -340,13 +340,13 @@ namespace ArithmeticChallenge
 
             if (count == 0)
             {
-                tempList = equations.OrderBy(x => x.SecondNumber).ToList();
+                tempList = equations.OrderBy(x => x.Symbol).ToList();
                 dataGridView1.DataSource = tempList;
                 count++;
             }
             else if (count == 1)
             {
-                tempList = equations.OrderByDescending(x => x.SecondNumber).ToList();
+                tempList = equations.OrderByDescending(x => x.Symbol).ToList();
                 dataGridView1.DataSource = tempList;
                 count = 0;
             }

@@ -1,0 +1,10 @@
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\bin\Debug\ArithmeticChallengeStudent.exe.config
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\bin\Debug\ArithmeticChallengeStudent.exe
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\bin\Debug\ArithmeticChallengeStudent.pdb
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\ArithmeticChallengeStudent.Student.resources
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\ArithmeticChallengeStudent.Properties.Resources.resources
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\Student.csproj.GenerateResource.cache
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\Student.csproj.CoreCompileInputs.cache
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\Student.csproj.CopyComplete
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\ArithmeticChallengeStudent.exe
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\ArithmeticChallengeStudent.pdb
