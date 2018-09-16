@@ -1,12 +1,4 @@
-﻿/*
- *      Student Number: 451381461
- *      Name:           Mitchell Stone
- *      Date:           14/09/2018
- *      Purpose:        Contains variable that are used to build a binary tree. Has a function to print out a binary tree node.
- *      Known Bugs:     nill
- */
-
-namespace ArithmeticChallenge.NodeFunctions
+﻿namespace ArithmeticChallenge.NodeFunctions
 {
     class BinaryTreeNode
     {
@@ -26,7 +18,7 @@ namespace ArithmeticChallenge.NodeFunctions
         //returns a string of a binary tree node
         public string NodeToString()
         {
-            return treeEquation.Result.ToString() + "(" +treeEquation.FirstNumber.ToString() + treeEquation.Symbol + treeEquation.SecondNumber.ToString() + "), ";
+            return treeEquation.ANumber.ToString() + "(" +treeEquation.FNumber.ToString() + treeEquation.Operator + treeEquation.SNumber.ToString() + "), ";
         }
 
     }

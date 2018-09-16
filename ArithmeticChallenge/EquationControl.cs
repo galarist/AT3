@@ -1,12 +1,4 @@
-﻿/*
- *      Student Number: 451381461
- *      Name:           Mitchell Stone
- *      Date:           14/09/2018
- *      Purpose:        Functions that help control the logic behind the Instuctor form
- *      Known Bugs:     nill
- */
-
-using ArithmeticChallenge.NodeFunctions;
+﻿using ArithmeticChallenge.NodeFunctions;
 using System;
 using System.Collections;
 using System.Linq;

@@ -125,7 +125,7 @@
             this.button10.TabIndex = 44;
             this.button10.Text = "Save";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.btn_savePostOrder_Click);
+            this.button10.Click += new System.EventHandler(this.SavePostOrder_Click);
             // 
             // buttonPost
             // 
@@ -139,7 +139,7 @@
             this.buttonPost.TabIndex = 45;
             this.buttonPost.Text = "Show";
             this.buttonPost.UseVisualStyleBackColor = false;
-            this.buttonPost.Click += new System.EventHandler(this.btn_printPostOrder_Click);
+            this.buttonPost.Click += new System.EventHandler(this.ShowPostOrder_Click);
             // 
             // button8
             // 
@@ -153,7 +153,7 @@
             this.button8.TabIndex = 46;
             this.button8.Text = "Save";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.btn_saveInOrder_Click);
+            this.button8.Click += new System.EventHandler(this.SaveInOrder_Click);
             // 
             // buttonIn
             // 
@@ -167,7 +167,7 @@
             this.buttonIn.TabIndex = 47;
             this.buttonIn.Text = "Show";
             this.buttonIn.UseVisualStyleBackColor = false;
-            this.buttonIn.Click += new System.EventHandler(this.btn_printInOrder_Click);
+            this.buttonIn.Click += new System.EventHandler(this.ShowInOrder_Click);
             // 
             // button6
             // 
@@ -181,7 +181,7 @@
             this.button6.TabIndex = 48;
             this.button6.Text = "Save";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.btn_savePreOrder_Click);
+            this.button6.Click += new System.EventHandler(this.SavePreOrder_Click);
             // 
             // buttonPre
             // 
@@ -195,7 +195,7 @@
             this.buttonPre.TabIndex = 49;
             this.buttonPre.Text = "Show";
             this.buttonPre.UseVisualStyleBackColor = false;
-            this.buttonPre.Click += new System.EventHandler(this.btn_printPreOrder_Click);
+            this.buttonPre.Click += new System.EventHandler(this.ShowPreOrder_Click);
             // 
             // panel4
             // 

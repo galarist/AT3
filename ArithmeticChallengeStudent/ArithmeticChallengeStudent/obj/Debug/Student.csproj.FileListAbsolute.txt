@@ -8,3 +8,4 @@ C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeS
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\Student.csproj.CopyComplete
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\ArithmeticChallengeStudent.exe
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\ArithmeticChallengeStudent.pdb
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\Student.csprojAssemblyReference.cache

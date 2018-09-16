@@ -1,13 +1,4 @@
-﻿/*
- *      Student Number: 451381461
- *      Name:           Mitchell Stone
- *      Date:           14/09/2018
- *      Purpose:        Contains properties of a node list that are used to manipulate the list. Contains functions that add, sort and search through
- *                      the list of nodes
- *      Known Bugs:     nill
- */
-
-using System.Collections;
+﻿using System.Collections;
 
 namespace ArithmeticChallenge.NodeFunctions
 {
@@ -69,7 +60,7 @@ namespace ArithmeticChallenge.NodeFunctions
             {
                 for (LinkListNode j = i.GetNext(); j != null; j = j.GetNext())
                 {
-                    if (i.GetMyValue().Result > j.GetMyValue().Result)
+                    if (i.GetMyValue().ANumber > j.GetMyValue().ANumber)
                     {
                         var Temp = j.GetMyValue();
                         j.SetMyValue(i.GetMyValue());

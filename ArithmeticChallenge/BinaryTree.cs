@@ -1,13 +1,4 @@
-﻿/*
- *      Student Number: 451381461
- *      Name:           Mitchell Stone
- *      Date:           14/09/2018
- *      Purpose:        Contains functions to create and add to the binary tree. Contains recursive functions for the print
- *                      binary tree in post-order, in-order and pre-order
- *      Known Bugs:     nill
- */
-
-using System.Text;
+﻿using System.Text;
 
 namespace ArithmeticChallenge.NodeFunctions
 {
@@ -43,7 +34,7 @@ namespace ArithmeticChallenge.NodeFunctions
 
             do
             {
-                if (myValue.Result < currentNode.treeEquation.Result)
+                if (myValue.ANumber < currentNode.treeEquation.ANumber)
                 {
                     //insert to the left
                     if (currentNode.left == null)
@@ -58,7 +49,7 @@ namespace ArithmeticChallenge.NodeFunctions
                     }
                 }
 
-                if (myValue.Result >= currentNode.treeEquation.Result)
+                if (myValue.ANumber >= currentNode.treeEquation.ANumber)
                 {
                     // move right
                     if (currentNode.right == null)
@@ -152,11 +143,11 @@ namespace ArithmeticChallenge.NodeFunctions
             {
                 return null;
             }
-            if (node.treeEquation.Result == resultValue)
+            if (node.treeEquation.ANumber == resultValue)
             {
                 return node;
             }
-            if (node.treeEquation.Result > resultValue) return FindNodeByResultValue(node.left, resultValue);
+            if (node.treeEquation.ANumber > resultValue) return FindNodeByResultValue(node.left, resultValue);
             return FindNodeByResultValue(node.right, resultValue);
         }
 
@@ -165,11 +156,11 @@ namespace ArithmeticChallenge.NodeFunctions
             //creates a single string for a nodes properties
             StringBuilder sb = new StringBuilder();
 
-            sb.Append(node.treeEquation.Result.ToString());
+            sb.Append(node.treeEquation.ANumber.ToString());
             sb.Append("(");
-            sb.Append(node.treeEquation.FirstNumber.ToString());
-            sb.Append(node.treeEquation.Symbol);
-            sb.Append(node.treeEquation.SecondNumber.ToString());
+            sb.Append(node.treeEquation.FNumber.ToString());
+            sb.Append(node.treeEquation.Operator);
+            sb.Append(node.treeEquation.SNumber.ToString());
             sb.Append(")");
 
             return sb.ToString();

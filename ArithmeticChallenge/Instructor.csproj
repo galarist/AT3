@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InstructorController.cs" />
+    <Compile Include="EquationControl.cs" />
     <Compile Include="Instructor.cs">
       <SubType>Form</SubType>
     </Compile>

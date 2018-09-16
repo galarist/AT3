@@ -1,12 +1,4 @@
-﻿/*
- *      Student Number: 451381461
- *      Name:           Mitchell Stone
- *      Date:           14/09/2018
- *      Purpose:        All functions to run the logic for the instructor form
- *      Known Bugs:     nill
- */
-
-using ArithmeticChallenge.Controllers;
+﻿using ArithmeticChallenge.Controllers;
 using ArithmeticChallenge.NodeFunctions;
 using Newtonsoft.Json;
 using System;
@@ -162,7 +154,7 @@ namespace ArithmeticChallenge
                 {
                     rtbAsked.Clear();
                     //the default print order for the binary tree is in-order
-                    rtbAsked.Text = BinaryTree.PrintInOrder(tree);
+                    //rtbAsked.Text = BinaryTree.PrintInOrder(tree);
                     SendBtn.Enabled = true;
                 });
 
@@ -230,22 +222,22 @@ namespace ArithmeticChallenge
             dataGridView1.DataSource = equations;
 
             DataGridViewTextBoxColumn columnFirst = new DataGridViewTextBoxColumn();
-            columnFirst.DataPropertyName = "FirstNumber";
+            columnFirst.DataPropertyName = "FNumber";
             columnFirst.Name = "First Number";
             dataGridView1.Columns.Add(columnFirst);
 
             DataGridViewTextBoxColumn columnOperator = new DataGridViewTextBoxColumn();
-            columnOperator.DataPropertyName = "Symbol";
+            columnOperator.DataPropertyName = "Operator";
             columnOperator.Name = "Operator";
             dataGridView1.Columns.Add(columnOperator);
 
             DataGridViewTextBoxColumn columnSecond = new DataGridViewTextBoxColumn();
-            columnSecond.DataPropertyName = "SecondNumber";
+            columnSecond.DataPropertyName = "SNumber";
             columnSecond.Name = "Second Number";
             dataGridView1.Columns.Add(columnSecond);
 
             DataGridViewTextBoxColumn columnResult = new DataGridViewTextBoxColumn();
-            columnResult.DataPropertyName = "Result";
+            columnResult.DataPropertyName = "ANumber";
             columnResult.Name = "Answer";
             dataGridView1.Columns.Add(columnResult);
         }
@@ -304,13 +296,13 @@ namespace ArithmeticChallenge
 
             if (count == 0)
             {
-                tempList = equations.OrderBy(x => x.Symbol).ToList();
+                tempList = equations.OrderBy(x => x.Operator).ToList();
                 dataGridView1.DataSource = tempList;
                 count++;
             }
             else if (count == 1)
             {
-                tempList = equations.OrderByDescending(x => x.Symbol).ToList();
+                tempList = equations.OrderByDescending(x => x.Operator).ToList();
                 dataGridView1.DataSource = tempList;
                 count = 0;
             }
@@ -322,13 +314,13 @@ namespace ArithmeticChallenge
 
              if (count == 0)
              {
-                 tempList = equations.OrderBy(x => x.Symbol).ToList();
+                 tempList = equations.OrderBy(x => x.Operator).ToList();
                  dataGridView1.DataSource = tempList;
                  count++;
              }
              else if (count == 1)
              {
-                 tempList = equations.OrderByDescending(x => x.Symbol).ToList();
+                 tempList = equations.OrderByDescending(x => x.Operator).ToList();
                  dataGridView1.DataSource = tempList;
                  count = 0;
             }
@@ -340,13 +332,13 @@ namespace ArithmeticChallenge
 
             if (count == 0)
             {
-                tempList = equations.OrderBy(x => x.Symbol).ToList();
+                tempList = equations.OrderBy(x => x.Operator).ToList();
                 dataGridView1.DataSource = tempList;
                 count++;
             }
             else if (count == 1)
             {
-                tempList = equations.OrderByDescending(x => x.Symbol).ToList();
+                tempList = equations.OrderByDescending(x => x.Operator).ToList();
                 dataGridView1.DataSource = tempList;
                 count = 0;
             }
@@ -354,60 +346,61 @@ namespace ArithmeticChallenge
 
         #endregion
 
-        private void btn_printPreOrder_Click(object sender, EventArgs e)
+        private void ShowPreOrder_Click(object sender, EventArgs e)
         {
             //lbl_sortOrder.Text = "Binary Tree - Sorted by Pre-Order";
-            rtbAsked.Text = BinaryTree.PrintPreOrder(tree);
+            rtbAsked.Text = "Pre-Order: " + BinaryTree.PrintPreOrder(tree);
         }
 
-        private void btn_printInOrder_Click(object sender, EventArgs e)
+        private void ShowInOrder_Click(object sender, EventArgs e)
         {
             //lbl_sortOrder.Text = "Binary Tree - Sorted by In-Order";
-            rtbAsked.Text = BinaryTree.PrintInOrder(tree);
+            rtbAsked.Text = "In-Order: " + BinaryTree.PrintInOrder(tree);
         }
 
-        private void btn_printPostOrder_Click(object sender, EventArgs e)
+        private void ShowPostOrder_Click(object sender, EventArgs e)
         {
             //lbl_sortOrder.Text = "Binary Tree - Sorted by Post-Order";
-            rtbAsked.Text = BinaryTree.PrintPostOrder(tree);
+            rtbAsked.Text = "Post-Order: " + BinaryTree.PrintPostOrder(tree);
         }
 
-        private void btn_savePreOrder_Click(object sender, EventArgs e)
+        private void SavePreOrder_Click(object sender, EventArgs e)
         {
-            string preOrderDir = @"C:\ArithmeticChallenge\pre_order.txt";
+            string preOrderDir = @"preOrder.txt";
 
             using (StreamWriter writer = new StreamWriter(preOrderDir, true))
             {
-                writer.WriteLine(BinaryTree.PrintPreOrder(tree) + DateTime.Now.ToString("yyyy-MM-dd:hh-mm"));
-                writer.Close();
-            }         
-        }
-
-        private void btn_saveInOrder_Click(object sender, EventArgs e)
-        {
-            string preOrderDir = @"C:\ArithmeticChallenge\in_order.txt";
-
-            using (StreamWriter writer = new StreamWriter(preOrderDir, true))
-            {
-                writer.WriteLine(BinaryTree.PrintInOrder(tree) + DateTime.Now.ToString("yyyy-MM-dd:hh-mm"));
+                writer.WriteLine(BinaryTree.PrintPreOrder(tree));
                 writer.Close();
             }
         }
 
-        private void btn_savePostOrder_Click(object sender, EventArgs e)
+        private void SaveInOrder_Click(object sender, EventArgs e)
         {
-            string preOrderDir = @"C:\ArithmeticChallenge\post_order.txt";
+            string preOrderDir = @"inOrder.txt";
 
             using (StreamWriter writer = new StreamWriter(preOrderDir, true))
             {
-                writer.WriteLine(BinaryTree.PrintPostOrder(tree) + DateTime.Now.ToString("yyyy-MM-dd:hh-mm"));
+                writer.WriteLine(BinaryTree.PrintInOrder(tree));
                 writer.Close();
             }
+        }
+
+        private void SavePostOrder_Click(object sender, EventArgs e)
+        {
+            string preOrderDir = @"postOrder.txt";
+
+            using (StreamWriter writer = new StreamWriter(preOrderDir, true))
+            {
+                writer.WriteLine(BinaryTree.PrintPostOrder(tree));
+                writer.Close();
+            }
+                
         }
 
         private void btn_numbersOnly(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+           // e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
         private void Instructor_Load(object sender, EventArgs e)

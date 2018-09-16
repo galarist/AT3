@@ -1,12 +1,4 @@
-﻿/*
- *      Student Number: 451381461
- *      Name:           Mitchell Stone
- *      Date:           14/09/2018
- *      Purpose:        Seriliazable properties for equations receieved
- *      Known Bugs:     nill
- */
-
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 
 namespace ArithmeticChallengeStudent
