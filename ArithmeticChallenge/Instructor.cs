@@ -19,7 +19,7 @@ namespace ArithmeticChallenge
     {
         private Socket serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         private Socket clientSocket;
-        private int PORT = 3333;
+        private int PORT = 8888;
         private byte[] buffer;
 
         BinaryTree tree = new BinaryTree();
@@ -432,6 +432,7 @@ namespace ArithmeticChallenge
 
         private void Instructor_Load(object sender, EventArgs e)
         {
+            this.Text = "";
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.RowTemplate.Resizable = DataGridViewTriState.True;

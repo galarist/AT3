@@ -32,9 +32,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.btn_submit = new System.Windows.Forms.Button();
-            this.tb_answer = new System.Windows.Forms.TextBox();
-            this.tb_question = new System.Windows.Forms.TextBox();
+            this.SubmitButton = new System.Windows.Forms.Button();
+            this.textBanswer = new System.Windows.Forms.TextBox();
+            this.textBquestion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -85,35 +85,36 @@
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // btn_submit
+            // SubmitButton
             // 
-            this.btn_submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_submit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_submit.Location = new System.Drawing.Point(85, 158);
-            this.btn_submit.Name = "btn_submit";
-            this.btn_submit.Size = new System.Drawing.Size(89, 35);
-            this.btn_submit.TabIndex = 19;
-            this.btn_submit.Text = "Submit";
-            this.btn_submit.UseVisualStyleBackColor = false;
-            this.btn_submit.Click += new System.EventHandler(this.Submit_Click);
+            this.SubmitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SubmitButton.Location = new System.Drawing.Point(85, 158);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(89, 35);
+            this.SubmitButton.TabIndex = 19;
+            this.SubmitButton.Text = "Submit";
+            this.SubmitButton.UseVisualStyleBackColor = false;
+            this.SubmitButton.Click += new System.EventHandler(this.Submit_Click);
             // 
-            // tb_answer
+            // textBanswer
             // 
-            this.tb_answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_answer.Location = new System.Drawing.Point(108, 126);
-            this.tb_answer.Name = "tb_answer";
-            this.tb_answer.Size = new System.Drawing.Size(161, 26);
-            this.tb_answer.TabIndex = 16;
+            this.textBanswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBanswer.Location = new System.Drawing.Point(108, 126);
+            this.textBanswer.Name = "textBanswer";
+            this.textBanswer.Size = new System.Drawing.Size(161, 26);
+            this.textBanswer.TabIndex = 16;
             // 
-            // tb_question
+            // textBquestion
             // 
-            this.tb_question.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_question.Location = new System.Drawing.Point(108, 94);
-            this.tb_question.Name = "tb_question";
-            this.tb_question.Size = new System.Drawing.Size(161, 26);
-            this.tb_question.TabIndex = 17;
+            this.textBquestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBquestion.Location = new System.Drawing.Point(108, 94);
+            this.textBquestion.Name = "textBquestion";
+            this.textBquestion.ReadOnly = true;
+            this.textBquestion.Size = new System.Drawing.Size(161, 26);
+            this.textBquestion.TabIndex = 17;
             // 
             // label7
             // 
@@ -146,9 +147,9 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_exit);
-            this.Controls.Add(this.btn_submit);
-            this.Controls.Add(this.tb_answer);
-            this.Controls.Add(this.tb_question);
+            this.Controls.Add(this.SubmitButton);
+            this.Controls.Add(this.textBanswer);
+            this.Controls.Add(this.textBquestion);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Name = "Student";
@@ -165,9 +166,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_exit;
-        private System.Windows.Forms.Button btn_submit;
-        private System.Windows.Forms.TextBox tb_answer;
-        private System.Windows.Forms.TextBox tb_question;
+        private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.TextBox textBanswer;
+        private System.Windows.Forms.TextBox textBquestion;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
     }

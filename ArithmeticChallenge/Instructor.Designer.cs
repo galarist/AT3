@@ -266,6 +266,7 @@
             this.rtbAsked.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbAsked.Location = new System.Drawing.Point(11, 512);
             this.rtbAsked.Name = "rtbAsked";
+            this.rtbAsked.ReadOnly = true;
             this.rtbAsked.Size = new System.Drawing.Size(938, 96);
             this.rtbAsked.TabIndex = 42;
             this.rtbAsked.Text = "";
@@ -276,6 +277,7 @@
             this.rtbWrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbWrong.Location = new System.Drawing.Point(11, 376);
             this.rtbWrong.Name = "rtbWrong";
+            this.rtbWrong.ReadOnly = true;
             this.rtbWrong.Size = new System.Drawing.Size(938, 96);
             this.rtbWrong.TabIndex = 43;
             this.rtbWrong.Text = "";
@@ -316,6 +318,7 @@
             this.textBoxAnumber.Location = new System.Drawing.Point(172, 199);
             this.textBoxAnumber.MaxLength = 0;
             this.textBoxAnumber.Name = "textBoxAnumber";
+            this.textBoxAnumber.ReadOnly = true;
             this.textBoxAnumber.Size = new System.Drawing.Size(163, 29);
             this.textBoxAnumber.TabIndex = 38;
             // 
@@ -481,6 +484,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(73)))), ((int)(((byte)(110)))));
             this.ClientSize = new System.Drawing.Size(963, 717);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonSort3);
             this.Controls.Add(this.buttonSort2);
             this.Controls.Add(this.buttonSort1);
@@ -510,6 +514,7 @@
             this.Controls.Add(this.SendBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Instructor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Instructor";

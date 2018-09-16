@@ -36,7 +36,7 @@ namespace ArithmeticChallengeStudent
         public Student()
         {
             InitializeComponent();
-            btn_submit.Enabled = false;
+            SubmitButton.Enabled = false;
 
             try
             {
@@ -54,10 +54,10 @@ namespace ArithmeticChallengeStudent
                 ShowErrorDialog(ex.Message);
             }
 
-            if (tb_question != null)
+            if (textBquestion != null)
             {
                 this.Focus();
-                tb_answer.Select();
+                textBanswer.Select();
             }
             else
             {
@@ -95,8 +95,8 @@ namespace ArithmeticChallengeStudent
                     Invoke((Action)delegate
                     {
                         //update the question text box to show the equation
-                        tb_question.Text = equation.FirstNumber.ToString() + equation.Symbol + equation.SecondNumber.ToString() + "=";
-                        btn_submit.Enabled = true;
+                        textBquestion.Text = equation.FirstNumber.ToString() + equation.Symbol + equation.SecondNumber.ToString() + "=";
+                        SubmitButton.Enabled = true;
                     });
                     buffer = new byte[clientSocket.ReceiveBufferSize];
                 }
@@ -166,7 +166,7 @@ namespace ArithmeticChallengeStudent
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            if (tb_answer.Text == equation.Result.ToString())
+            if (textBanswer.Text == equation.Result.ToString())
             {
                 //submit correct answer
                 MessageBox.Show("That is correct!", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -183,9 +183,9 @@ namespace ArithmeticChallengeStudent
                 SendMessage(json);
             }
             //toggle button and clear text boxes
-            btn_submit.Enabled = false;
-            tb_answer.Clear();
-            tb_question.Clear();
+            SubmitButton.Enabled = false;
+            textBanswer.Clear();
+            textBquestion.Clear();
         }
 
         private void SendMessage(string json)
