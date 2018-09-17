@@ -1,17 +1,16 @@
-﻿/*
- *      Student Number: 451381461
- *      Name:           Mitchell Stone
- *      Date:           14/09/2018
- *      Purpose:        All functions to run the logic for the student window
- *      Known Bugs:     nill
- */
-
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
+
+/************************
+ * Name: Cristovao Galambos
+ * Student ID: 459230413
+ * Purpose: Network Based Arithmetic Game Challenge
+ * Finished Date: 17/09/2018
+ * **********************/
 
 namespace ArithmeticChallengeStudent
 {

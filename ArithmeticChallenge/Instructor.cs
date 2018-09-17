@@ -13,6 +13,13 @@ using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
 
+/************************
+ * Name: Cristovao Galambos
+ * Student ID: 459230413
+ * Purpose: Network Based Arithmetic Game Challenge
+ * Finished Date: 17/09/2018
+ * **********************/
+
 namespace ArithmeticChallenge
 {
     public partial class Instructor : Form

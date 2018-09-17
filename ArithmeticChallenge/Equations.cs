@@ -1,6 +1,13 @@
 ﻿using Newtonsoft.Json;
 using System;
 
+/************************
+ * Name: Cristovao Galambos
+ * Student ID: 459230413
+ * Purpose: Network Based Arithmetic Game Challenge
+ * Finished Date: 17/09/2018
+ * **********************/
+
 namespace ArithmeticChallenge
 {
     [Serializable]

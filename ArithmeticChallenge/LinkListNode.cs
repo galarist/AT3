@@ -1,5 +1,12 @@
 ﻿namespace ArithmeticChallenge.NodeFunctions
 {
+    /************************
+     * Name: Cristovao Galambos
+     * Student ID: 459230413
+     * Purpose: Network Based Arithmetic Game Challenge
+     * Finished Date: 17/09/2018
+     * **********************/
+
     class LinkListNode
     {
         public Equations equation;
