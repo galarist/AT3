@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instructor", "ArithmeticChallenge\Instructor.csproj", "{F1D41731-B647-4005-B69C-E7E41EA2DEA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instructor", "Instructor\Instructor.csproj", "{F1D41731-B647-4005-B69C-E7E41EA2DEA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student", "ArithmeticChallengeStudent\ArithmeticChallengeStudent\Student.csproj", "{5904C1E6-B7BC-48EC-89BC-54F7150526FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student", "Student\Student.csproj", "{5904C1E6-B7BC-48EC-89BC-54F7150526FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

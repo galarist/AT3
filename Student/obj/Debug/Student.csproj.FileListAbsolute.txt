@@ -9,3 +9,15 @@ C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeS
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\ArithmeticChallengeStudent.exe
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\ArithmeticChallengeStudent.pdb
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallengeStudent\ArithmeticChallengeStudent\obj\Debug\Student.csprojAssemblyReference.cache
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\bin\Debug\ArithmeticChallengeStudent.exe.config
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\bin\Debug\ArithmeticChallengeStudent.exe
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\bin\Debug\ArithmeticChallengeStudent.pdb
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\ArithmeticChallengeStudent.Student.resources
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\ArithmeticChallengeStudent.Properties.Resources.resources
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\Student.csproj.GenerateResource.cache
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\Student.csproj.CoreCompileInputs.cache
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\Student.csproj.CopyComplete
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\ArithmeticChallengeStudent.exe
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\ArithmeticChallengeStudent.pdb

@@ -11,3 +11,15 @@ C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallenge\
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallenge\obj\Debug\Instructor.csproj.CopyComplete
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.exe
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\ArithmeticChallenge\obj\Debug\ArithmeticChallenge.pdb
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\bin\Debug\ArithmeticChallenge.exe.config
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\bin\Debug\ArithmeticChallenge.exe
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\bin\Debug\ArithmeticChallenge.pdb
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\obj\Debug\ArithmeticChallenge.Instructor.resources
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\obj\Debug\ArithmeticChallenge.Properties.Resources.resources
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\obj\Debug\Instructor.csproj.GenerateResource.cache
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\obj\Debug\Instructor.csproj.CoreCompileInputs.cache
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\obj\Debug\Instructor.csproj.CopyComplete
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\obj\Debug\ArithmeticChallenge.exe
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Instructor\obj\Debug\ArithmeticChallenge.pdb
