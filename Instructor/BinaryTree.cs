@@ -1,4 +1,10 @@
-﻿using System.Text;
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////
+// file:	BinaryTree.cs
+//
+// summary:	Implements the binary tree class
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+using System.Text;
 
 /************************
  * Name: Cristovao Galambos
@@ -9,23 +15,53 @@
 
 namespace ArithmeticChallenge.NodeFunctions
 {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    /// <summary>   A binary tree. </summary>
+    ///
+    /// <remarks>   Galarist, 18/09/2018. </remarks>
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
     class BinaryTree
     {
         //the first node of the binary tree
+        /// <summary>   The root. </summary>
         public BinaryTreeNode root;
 
         //string used to print the binary tree
+        /// <summary>   The print string. </summary>
         private static string printString = "";
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Default constructor. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public BinaryTree()
         {
             root = null;
         }
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Constructor. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="value">    The value. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public BinaryTree(Equations value)
         {
             root = new BinaryTreeNode(value);
         }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Adds myValue. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="myValue">  my value to add. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public void Add(Equations myValue)
         {
@@ -72,6 +108,16 @@ namespace ArithmeticChallenge.NodeFunctions
             } while (!insert);
         }//end function
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Print post order. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="tree"> The tree. </param>
+        ///
+        /// <returns>   A string. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public static string PrintPostOrder(BinaryTree tree)
         {
             printString = "";
@@ -80,6 +126,15 @@ namespace ArithmeticChallenge.NodeFunctions
         }
 
         //given a the root node of a binary tree, print in post-order
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Print post order. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public static void PrintPostOrder(BinaryTreeNode node)
         {
             if (node == null)
@@ -97,6 +152,16 @@ namespace ArithmeticChallenge.NodeFunctions
             printString += node.NodeToString();
         }
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Print in order. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="tree"> The tree. </param>
+        ///
+        /// <returns>   A string. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public static string PrintInOrder(BinaryTree tree)
         {
             printString = "";
@@ -105,6 +170,15 @@ namespace ArithmeticChallenge.NodeFunctions
         }
 
         //given the root node of a binary tree, print in-order
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Print in order. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public static void PrintInOrder(BinaryTreeNode node)
         {
             if (node == null)
@@ -120,6 +194,16 @@ namespace ArithmeticChallenge.NodeFunctions
             PrintInOrder(node.right);
         }
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Print pre order. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="tree"> The tree. </param>
+        ///
+        /// <returns>   A string. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public static string PrintPreOrder(BinaryTree tree)
         {
             printString = "";
@@ -128,6 +212,15 @@ namespace ArithmeticChallenge.NodeFunctions
         }
 
         //given the root node of a binary, print in pre-order
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Print pre order. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public static void PrintPreOrder(BinaryTreeNode node)
         {
             if (node == null)
@@ -143,6 +236,17 @@ namespace ArithmeticChallenge.NodeFunctions
             PrintPreOrder(node.right);
         }
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Searches for the first node by result value. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node">         The node. </param>
+        /// <param name="resultValue">  The result value. </param>
+        ///
+        /// <returns>   The found node by result value. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public BinaryTreeNode FindNodeByResultValue(BinaryTreeNode node, int resultValue)
         {
             //returns the node where the result value equals the search value
@@ -157,6 +261,16 @@ namespace ArithmeticChallenge.NodeFunctions
             if (node.treeEquation.ANumber > resultValue) return FindNodeByResultValue(node.left, resultValue);
             return FindNodeByResultValue(node.right, resultValue);
         }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Print node. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ///
+        /// <returns>   A string. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         private static string PrintNode(BinaryTreeNode node)
         {

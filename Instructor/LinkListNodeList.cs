@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////
+// file:	LinkListNodeList.cs
+//
+// summary:	Implements the link list node list class
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+using System.Collections;
 
 /************************
  * Name: Cristovao Galambos
@@ -9,16 +15,40 @@
 
 namespace ArithmeticChallenge.NodeFunctions
 {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    /// <summary>   List of link list nodes. </summary>
+    ///
+    /// <remarks>   Galarist, 18/09/2018. </remarks>
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
     class LinkListNodeList
     {
         //in this list a node can only have 3 states
+        /// <summary>   The head node. </summary>
         public LinkListNode HeadNode;
+        /// <summary>   The current node. </summary>
         public LinkListNode CurrentNode;
+        /// <summary>   The tail node. </summary>
         public LinkListNode TailNode;
 
+        /// <summary>   Number of. </summary>
         public static int count = 0;
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Default constructor. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public LinkListNodeList(){}
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Constructor. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public LinkListNodeList(LinkListNode node)
         {
@@ -29,15 +59,77 @@ namespace ArithmeticChallenge.NodeFunctions
         }
 
         //properties to get or set a nodes value
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Gets current node. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <returns>   The current node. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public LinkListNode getCurrentNode() { return CurrentNode; }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Gets head node. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <returns>   The head node. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public LinkListNode getHeadNode() { return HeadNode; }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Gets tail node. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <returns>   The tail node. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public LinkListNode getTailNode() { return TailNode; }
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Sets current node. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public void setCurrentNode(LinkListNode node) { CurrentNode = node; }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Sets head node. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public void setHeadNode(LinkListNode node) { HeadNode = node; }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Sets tail node. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public void setTailNode(LinkListNode node) { TailNode = node; }
 
         //add a node to the node list
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Adds an equation node. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="node"> The node. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public void AddEquationNode(LinkListNode node)
         {
             if ((HeadNode == null) && (CurrentNode == null) && (TailNode == null))
@@ -59,6 +151,12 @@ namespace ArithmeticChallenge.NodeFunctions
             }
         }
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Sort list. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public void SortList()
         {
             //sorts the list by the equation result
@@ -76,6 +174,16 @@ namespace ArithmeticChallenge.NodeFunctions
                 }
             }
         }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Binary search. </summary>
+        ///
+        /// <remarks>   Galarist, 18/09/2018. </remarks>
+        ///
+        /// <param name="searchValue">  The search value. </param>
+        ///
+        /// <returns>   An int. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public int BinarySearch(LinkListNode searchValue)
         {

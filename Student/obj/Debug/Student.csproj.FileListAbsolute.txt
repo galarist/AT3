@@ -21,3 +21,5 @@ C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\St
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\Student.csproj.CopyComplete
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\ArithmeticChallengeStudent.exe
 C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\ArithmeticChallengeStudent.pdb
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\bin\Debug\ArithmeticChallengeStudent.xml
+C:\Users\Galarist\source\repos\ArithmeticChalengeGame - AT3\Student\obj\Debug\Student.csprojAssemblyReference.cache
